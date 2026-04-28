@@ -1,0 +1,125 @@
+.card {
+  background: #fff;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  animation: scaleIn 0.4s ease both;
+}
+
+.card:hover {
+  transform: translateY(-7px);
+  box-shadow: var(--shadow-lg);
+}
+
+.card:hover .emoji {
+  transform: scale(1.15) rotate(-6deg);
+}
+
+.top {
+  height: 190px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.emoji {
+  font-size: 84px;
+  transition: transform 0.4s ease;
+  display: block;
+  user-select: none;
+}
+
+.bounce {
+  animation: pulse 0.45s ease;
+}
+
+.tag {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  padding: 5px 14px;
+  border-radius: var(--radius-pill);
+  font-family: var(--font-body);
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+}
+
+.body {
+  padding: 24px 28px 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.name {
+  font-size: 21px;
+  font-weight: 700;
+  color: var(--pink-800);
+  letter-spacing: -0.3px;
+}
+
+.desc {
+  font-family: var(--font-body);
+  font-size: 14px;
+  color: var(--pink-700);
+  line-height: 1.65;
+  font-weight: 300;
+}
+
+.allergens {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 4px;
+}
+
+.allergenTag {
+  font-family: var(--font-body);
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  color: var(--pink-600);
+  background: var(--pink-100);
+  padding: 3px 10px;
+  border-radius: var(--radius-pill);
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 8px;
+}
+
+.price {
+  font-size: 26px;
+  font-weight: 900;
+  color: var(--pink-500);
+  letter-spacing: -0.5px;
+}
+
+.addBtn {
+  background: var(--pink-500);
+  color: #fff;
+  padding: 11px 24px;
+  border-radius: var(--radius-pill);
+  font-family: var(--font-body);
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  transition: background 0.2s, transform 0.2s;
+  box-shadow: 0 4px 14px rgba(233, 30, 99, 0.22);
+}
+
+.addBtn:hover {
+  background: var(--pink-600);
+  transform: scale(1.05);
+}
+
+.addBtn.added {
+  background: var(--pink-800);
+}
