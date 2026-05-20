@@ -4,7 +4,7 @@ import { useAuth } from '../context/AuthContext';
 import Footer from '../components/Footer/Footer';
 import styles from './Menu.module.css';
 
-const BASE = 'http://localhost:5000/api';
+const BASE = 'http://server:5000/api';
 const TAG_COLORS: Record<string,{bg:string;color:string}> = {
   Bestseller: { bg:'#e91e63', color:'#fff' },
   New:        { bg:'#f06292', color:'#fff' },
