@@ -5,8 +5,8 @@ import pool from '../config/db';
 import { AuthRequest } from '../types';
 
 export const register = async (req: Request, res: Response) => {
-  const { name, email, password, gender, avatar } = req.body;
-  if (!name || !email || !password || !gender || !avatar)
+  const { name, email, password, gender, avatar = "default" } = req.body;
+  if (!name || !email || !password || !gender )
     return res.status(400).json({ message: 'Name, email, password, gender and avatar are required' });
 
   try {

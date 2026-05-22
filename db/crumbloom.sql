@@ -181,7 +181,7 @@ CREATE TABLE `users` (
   `password` varchar(255) NOT NULL,
   `role` enum('admin','user') NOT NULL DEFAULT 'user',
   `gender` enum('male','female','other') DEFAULT NULL,
-  `avatar` varchar(10) NOT NULL DEFAULT '??',
+  `avatar` varchar(10) NOT NULL DEFAULT '👤',
   `phone` varchar(20) DEFAULT NULL,
   `address` text DEFAULT NULL,
   `created_at` timestamp NOT NULL DEFAULT current_timestamp(),
